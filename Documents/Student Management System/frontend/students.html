@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Students</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>Student MS</h2>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="students.html"
+               class="active">
+                Students
+            </a>
+
+            <a href="add-student.html">
+                Add Student
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <h1>Students</h1>
+
+            <a href="add-student.html"
+               class="btn">
+                + Add Student
+            </a>
+
+        </header>
+
+
+        <section class="content-card">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search student by name..."
+                >
+
+                <button
+                    class="btn"
+                    onclick="searchStudents()">
+                    Search
+                </button>
+
+                <button
+                    class="btn secondary"
+                    onclick="loadStudents()">
+                    Reset
+                </button>
+
+            </div>
+
+
+            <div id="message"></div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Course</th>
+                        <th>Department</th>
+                        <th>Year</th>
+                        <th>Actions</th>
+
+                    </tr>
+
+                    </thead>
+
+                    <tbody id="studentTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
